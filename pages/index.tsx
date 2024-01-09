@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import MobileNav from '@/components/MobileNav';
 import Hero from '@/components/Hero';
+import TopDestination from '@/components/TopDestination';
 
 const HomePage = () => {
   const [nav, setNav] = useState(false);
@@ -20,6 +21,8 @@ const HomePage = () => {
       <MobileNav nav={nav} toggleNavHandle={toggleNavHandle} />
       <Navbar toggleNavHandle={toggleNavHandle} />
       <Hero />
+
+      <TopDestination />
     </div>
   );
 };

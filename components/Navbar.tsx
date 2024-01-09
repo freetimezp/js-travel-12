@@ -4,7 +4,11 @@ import Image from 'next/image';
 import logoImg from '../public/images/logo.png';
 import { Bars3Icon } from '@heroicons/react/16/solid';
 
-function Navbar() {
+interface Props {
+    toggleNavHandle: () => void,
+}
+
+function Navbar({ toggleNavHandle }: Props) {
     return (
         <div className="w-[100%] bg-white">
             <div className='flex w-[80%] mx-auto items-center justify-between h-[12vh]'>
@@ -34,7 +38,7 @@ function Navbar() {
                         </span>
                     </a>
                     <Bars3Icon className='w-[2rem] h-[2rem] lg:hidden text-blue-800
-                        font-bold' />
+                        font-bold' onClick={toggleNavHandle} />
                 </div>
             </div>
         </div>

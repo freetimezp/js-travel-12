@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import MobileNav from '@/components/MobileNav';
 import Hero from '@/components/Hero';
 import TopDestination from '@/components/TopDestination';
+import Hotels from '@/components/Hotels';
 
 const HomePage = () => {
   const [nav, setNav] = useState(false);
@@ -18,11 +19,12 @@ const HomePage = () => {
       <Head>
         <title>Website | Travel</title>
       </Head>
+
       <MobileNav nav={nav} toggleNavHandle={toggleNavHandle} />
       <Navbar toggleNavHandle={toggleNavHandle} />
       <Hero />
-
       <TopDestination />
+      <Hotels />
     </div>
   );
 };

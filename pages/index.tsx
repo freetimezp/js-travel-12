@@ -8,6 +8,7 @@ import TopDestination from '@/components/TopDestination';
 import Hotels from '@/components/Hotels';
 import Reviews from '@/components/Reviews';
 import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
 
 const HomePage = () => {
   const [nav, setNav] = useState(false);
@@ -29,6 +30,7 @@ const HomePage = () => {
       <Hotels />
       <Reviews />
       <Contact />
+      <Footer />
     </div>
   );
 };

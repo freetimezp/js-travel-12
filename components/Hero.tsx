@@ -15,7 +15,7 @@ function Hero() {
                 -translate-x-[50%] -translate-y-[50%]'>
                 <div className='flex items-center justify-center flex-col w-[100%] 
                     h-[100%]'>
-                    <div>
+                    <div data-aos="fade-right">
                         <h1 className='text-[25px] md:text-[35px] lg:text-[45px] 
                             mb-[1rem] md:mb-0 text-center tracking-[0.7rem] text-white
                             font-bold uppercase'>
